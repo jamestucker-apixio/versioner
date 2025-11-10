@@ -1,0 +1,19 @@
+[project]
+name = "versioner"
+version = "0.3.0"
+description = "A version management tool for notebooks, Databricks tables, and configuration files"
+readme = "README.md"
+authors = [
+    { name = "James M. Tucker, Ph.D.", email = "james.tucker@datavant.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+versioner = "versioner:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
